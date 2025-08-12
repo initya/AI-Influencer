@@ -1,0 +1,29 @@
+# Video Caption Generator Dependencies
+
+# Core video processing
+moviepy>=1.0.3
+
+# Speech recognition
+SpeechRecognition>=3.10.0
+openai-whisper>=20231117
+
+# Audio processing
+pydub>=0.25.1
+
+# Additional dependencies for audio/video processing
+ffmpeg-python>=0.2.0
+
+# Optional: For better performance with some audio formats
+librosa>=0.10.0
+
+# System dependencies (install separately):
+# - ffmpeg: Required by moviepy and pydub
+#   Windows: Download from https://ffmpeg.org/download.html
+#   macOS: brew install ffmpeg
+#   Ubuntu/Debian: sudo apt install ffmpeg
+#
+# - For speech_recognition Google API (internet required):
+#   No additional setup needed, uses Google's free tier
+#
+# Note: The script uses OpenAI Whisper as primary transcription method
+# which works offline and provides better accuracy than basic speech_recognition
